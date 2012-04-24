@@ -1,40 +1,45 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#
+# Sets Oh My Zsh options.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="alanpeabody-modified"
+# Set the path to Oh My Zsh.
+export OMZ="$HOME/.oh-my-zsh"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+# Set the key mapping style to 'emacs' or 'vi'.
+zstyle ':omz:module:editor' keymap 'emacs'
 
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+# Auto convert .... to ../..
+zstyle ':omz:module:editor' dot-expansion 'no'
 
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
+# Set case-sensitivity for completion, history lookup, etc.
+zstyle ':omz:*:*' case-sensitive 'no'
 
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+# Color output (auto set to 'no' on dumb terminals).
+zstyle ':omz:*:*' color 'yes'
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+# Auto set the tab and window titles.
+zstyle ':omz:module:terminal' auto-title 'yes'
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm bundler rails3 git)
+# Set the Zsh modules to load (man zshmodules).
+# zstyle ':omz:load' zmodule 'attr' 'stat'
 
-source $ZSH/oh-my-zsh.sh
+# Set the Zsh functions to load (man zshcontrib).
+# zstyle ':omz:load' zfunction 'zargs' 'zmv'
 
-# Set the main editor.
-export EDITOR="mvim"
+# Set the Oh My Zsh modules to load (browse modules).
+zstyle ':omz:load' omodule 'environment' 'terminal' 'editor' 'completion' \
+  'history' 'directory' 'spectrum' 'alias' 'utility' 'prompt' 'git' 'rails'
+
+# Set the prompt theme to load.
+# Setting it to 'random' loads a random theme.
+# Auto set to 'off' on dumb terminals.
+zstyle ':omz:module:prompt' theme 'sorin'
+
+# This will make you shout: OH MY ZSHELL!
+source "$OMZ/init.zsh"
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/rhart/.rvm/bin
-
-# Load aliases.
-if [ -e "$HOME/.aliases" ]; then
-  source "$HOME/.aliases"
-fi
+source ".rvmrc"
