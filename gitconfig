@@ -1,0 +1,24 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = /usr/bin/vim
+[alias]
+  s = status
+  c = commit
+  a = add
+  di = diff
+  dic = diff --cached
+  pl = pull
+  ph = push
+  plre = pull --rebase
+  out = log origin..HEAD
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[user]
+  name = Richard Hart
+  email = richard@ur-ban.com
+[github]
+  user = Hates
+  token = c528b066adbc7a7ed26db9dbfb653086
