@@ -42,4 +42,6 @@ zstyle ':omz:module:prompt' theme 'sorin'
 source "$OMZ/init.zsh"
 
 # Customize to your needs...
-source ".rvmrc"
+if [[ -e "./.rvmrc" ]]; then
+  source ".rvmrc"
+fi
