@@ -3,5 +3,6 @@
 
 alias t="rvm 1.9.3@tmux && tmuxinator"
 
-PATH=/usr/local/bin:/usr/local/share/python:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:/Users/rhart/Work/Misc/Play/play-2.0.4
+PATH=$PATH:/usr/local/share/python
+PATH=$PATH:/usr/local/bin
