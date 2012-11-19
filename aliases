@@ -1,6 +1,0 @@
-# Rails aliases
-alias taild="tail -f log/development.log"
-alias tailp="tail -f log/production.log"
-
-# Git aliases
-alias g="git"
