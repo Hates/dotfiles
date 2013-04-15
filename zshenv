@@ -4,7 +4,7 @@
 alias a='ls -lrthG'
 alias be='bundle exec'
 alias ber='bundle exec rake'
-alias bes'bundle exec rspec'
+alias bes='bundle exec rspec'
 alias bi='bundle install'
 alias ga='git add .'
 alias gd='git diff'
