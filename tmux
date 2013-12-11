@@ -23,15 +23,15 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 bind | split-window -h
 bind - split-window -v
 
-# moving between panes
+# Moving between panes
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
 bind l select-pane -R
-
-# Quick pane selection
-bind -r C-h select-window -t :-
-bind -r C-l select-window -t :+
+bind -n C-Left select-pane -L
+bind -n C-Down select-pane -D
+bind -n C-Up select-pane -U
+bind -n C-Right select-pane -R
 
 # Pane resizing
 bind -r H resize-pane -L 5

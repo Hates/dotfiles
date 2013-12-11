@@ -6,6 +6,7 @@
   excludesfile = ~/.gitignore
   editor = vim
   pager = less -R -X
+  editor = mvim -v
 [alias]
   s = status
   c = commit
@@ -17,6 +18,7 @@
   plre = pull --rebase
   out = log origin..HEAD
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  st = status -sb
 [user]
   name = Richard Hart
   email = richard@ur-ban.com
@@ -24,3 +26,15 @@
   user = Hates
 [mergetool]
   keepBackup = true
+	prompt = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope
