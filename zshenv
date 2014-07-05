@@ -1,10 +1,7 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.tmuxinator/scripts/tmuxinator" ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
 alias a='ls -lrthG'
-alias be='bundle exec'
-alias ber='bundle exec rake'
-alias bes='bundle exec rspec'
+#alias be='bundle exec'
+#alias ber='bundle exec rake'
+#alias bes='bundle exec rspec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias capd='cap deploy:migrations'
@@ -20,5 +17,7 @@ alias u='cd ..'
 alias vi='mvim -v'
 alias vim='mvim -v'
 
-PATH=/usr/local/bin:$PATH
 EDITOR='vim'
+PATH=/usr/local/bin:$PATH
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
