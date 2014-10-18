@@ -51,7 +51,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/rhart/.rvm/gems/ruby-2.0.0-p576/bin:/Users/rhart/.rvm/gems/ruby-2.0.0-p576@global/bin:/Users/rhart/.rvm/rubies/ruby-2.0.0-p576/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/rhart/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -79,3 +78,6 @@ export PATH="/Users/rhart/.rvm/gems/ruby-2.0.0-p576/bin:/Users/rhart/.rvm/gems/r
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
