@@ -1,7 +1,4 @@
 alias a='ls -lrthG'
-#alias be='bundle exec'
-#alias ber='bundle exec rake'
-#alias bes='bundle exec rspec'
 alias bi='bundle install'
 alias bu='bundle update'
 alias capd='cap deploy:migrations'
