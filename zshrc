@@ -78,6 +78,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
