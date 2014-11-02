@@ -2,8 +2,6 @@
 /log/
 /logs/
 /images/
-/javascripts/
-/stylesheets/
 /vendor/
 *.sql
 *.tmp*
@@ -11,15 +9,11 @@
 *.gemtags*
 *.csv
 *.tsv
-*.css
-*.scss
 *.old
 *.json
 *.xml
-*.html
 *.plist
 *.pdf
-*.md
 *.log
 *.woff
 *.ttf
