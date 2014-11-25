@@ -48,6 +48,9 @@ set -g mouse-select-window on
 # Set the default terminal mode to 256color mode
 set -g default-terminal "screen-256color"
 
+# this will renumber windows automatically when one gets deleted
+set-option -g renumber-windows on
+
 # enable activity alerts
 setw -g monitor-activity on
 set -g visual-activity on

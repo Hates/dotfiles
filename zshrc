@@ -79,3 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
+
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. `brew --prefix`/etc/profile.d/z.sh
