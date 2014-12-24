@@ -80,8 +80,6 @@ source $ZSH/oh-my-zsh.sh
 
 PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Add syntax highlighting
 
-if [ -f "/etc/profile.d/z.sh" ]; then
-  . `brew --prefix`/etc/profile.d/z.sh
-fi
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
