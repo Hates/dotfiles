@@ -60,7 +60,11 @@ setw -g mode-keys vi
 
 # Enable pbcopy/pbpaste
 set-option -g default-command "reattach-to-user-namespace -l zsh"
-bind-key C-c run-shell "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+#bind-key C-c run-shell "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+
+# Update default binding of `Enter` to also use copy-pipe
+unbind -t vi-copy Enter
+bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Powerline styled status bar
 set -g status-left-length 52
