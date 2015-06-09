@@ -4,9 +4,8 @@
   branch = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = vim
   pager = less -R -X
-  editor = mvim -v
+  editor = nvim
 [alias]
   s = status
   c = commit
