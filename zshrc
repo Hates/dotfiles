@@ -82,3 +82,6 @@ PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 
 # Add syntax highlighting
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+
+# Add iTerm integration
+source /Users/rhart/.iterm2_shell_integration.zsh
