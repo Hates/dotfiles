@@ -21,8 +21,8 @@ set-option -g allow-rename off
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 # splitting panes
-bind | split-window -h
-bind - split-window -v
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
 # Moving between panes
 bind h select-pane -L
@@ -53,9 +53,6 @@ set -g visual-activity on
 
 # enable vi keys.
 setw -g mode-keys vi
-
-# Open new windows in the same directory as the current window
-bind c new-window -c "#{pane_current_path}"
 
 # Enable pbcopy/pbpaste
 set-option -g default-command "reattach-to-user-namespace -l zsh"
