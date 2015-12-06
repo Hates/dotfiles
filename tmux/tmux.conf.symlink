@@ -20,6 +20,9 @@ set-option -g allow-rename off
 # Reload the file with Prefix r
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
+# Kill session
+bind ! kill-session
+
 # splitting panes
 bind | split-window -h -c "#{pane_current_path}"
 bind - split-window -v -c "#{pane_current_path}"
