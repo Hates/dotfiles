@@ -84,3 +84,5 @@ PROMPT='%{$fg[cyan]%}[%1/% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 source ~/.iterm2_shell_integration.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -30,7 +30,7 @@ set -g window-status-format "#I #W"
 # active window title colors
 set-window-option -g window-status-current-fg $tm_color_active
 set-window-option -g window-status-current-bg default
-set-window-option -g  window-status-current-format "#[bold]#I #W"
+set-window-option -g window-status-current-format "#[bold]#I #W"
 
 # pane border
 set-option -g pane-border-fg $tm_color_inactive
