@@ -13,6 +13,13 @@ alias vim='nvim'
 EDITOR='vim'
 PATH=/usr/local/bin:$PATH
 
+# Add iTerm integration
+source ~/.iterm2_shell_integration.zsh
+
+# FZF Integration
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin" 
 
