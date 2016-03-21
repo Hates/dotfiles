@@ -23,8 +23,12 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin" 
 
-# Add Posgress.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+# Add Postgres to the path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Add Go
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH="${HOME}/Work/Misc/GoLang/"
