@@ -32,3 +32,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Add Go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH="${HOME}/Work/Misc/GoLang/"
+
+# Add Dato Launcher
+export PATH="$PATH:/Users/rhart/Work/Dato/anaconda/bin"
