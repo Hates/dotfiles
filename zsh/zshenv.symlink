@@ -7,8 +7,6 @@ alias gc='git commit -am'
 alias gpom='git push origin master'
 alias pr='powder restart'
 alias u='cd ..'
-alias vi='nvim'
-alias vim='nvim'
 
 EDITOR='vim'
 PATH=/usr/local/bin:$PATH
