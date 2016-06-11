@@ -1,12 +1,9 @@
 alias capp='cap production deploy'
 alias caps='cap staging deploy'
-alias ga='git add .'
-alias gd='git diff --color=always'
-alias gs='git status'
-alias gc='git commit -am'
+alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
 alias gpom='git push origin master'
-alias pr='powder restart'
-alias u='cd ..'
+alias gs='git status'
+alias vi='vim'
 
 EDITOR='vim'
 PATH=/usr/local/bin:$PATH
@@ -15,7 +12,6 @@ PATH=/usr/local/bin:$PATH
 source ~/.iterm2_shell_integration.zsh
 
 # FZF Integration
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
 # Add RVM to PATH for scripting
