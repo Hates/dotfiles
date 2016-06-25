@@ -1,25 +1,8 @@
-alias capp='cap production deploy'
-alias caps='cap staging deploy'
-alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
-alias gpom='git push origin master'
-alias gs='git status'
-alias vi='vim'
+# Editor
+export EDITOR='vim'
 
-EDITOR='vim'
-PATH=/usr/local/bin:$PATH
-
-# Add iTerm integration
-source ~/.iterm2_shell_integration.zsh
-
-# FZF Integration
-export FZF_DEFAULT_COMMAND='ag -g ""'
-export FZF_DEFAULT_OPTS='
-  --color fg:188,bg:233,hl:103,fg+:222,bg+:234,hl+:104
-  --color info:183,prompt:110,spinner:107,pointer:167,marker:215
-'
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin" 
+# Path
+export PATH=/usr/local/bin:$PATH
 
 # Add Postgres to the path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
