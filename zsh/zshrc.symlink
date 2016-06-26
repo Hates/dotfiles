@@ -85,7 +85,8 @@ alias caps='cap staging deploy'
 alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
 alias gpom='git push origin master'
 alias gs='git status'
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
 
 # Rbenv
 eval "$(rbenv init -)"
