@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(common-aliases bundler git rails tmuxinator zsh-syntax-highlighting)
+plugins=(common-aliases bundler git tmuxinator zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,7 +88,8 @@ alias gpom='git push origin master'
 alias gs='git status'
 alias vi='nvim'
 alias vim='nvim'
-alias mvimt='mvim -v'
+alias rc='bundle exec rails c'
+alias rs='bundle exec rails s'
 
 # CHRUBY
 source /usr/local/opt/chruby/share/chruby/chruby.sh
