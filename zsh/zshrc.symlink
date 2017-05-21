@@ -91,13 +91,12 @@ alias vim='nvim'
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
 
-# CHRUBY
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+# rbenv
+eval "$(rbenv init -)"
 
 # FZF Integration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS='--color fg:188,bg:016,hl:103,fg+:099,bg+:016,hl+:104,info:183,prompt:110,spinner:107,pointer:167,marker:215'
 
 # Add iTerm integration
