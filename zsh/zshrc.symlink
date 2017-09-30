@@ -91,8 +91,9 @@ alias vim='nvim'
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
 
-alias cd-rad='cd Work/Which/Repositories/reviews-and-advice'
-alias cd-ll='cd Work/LoveLula/Repositories/lovelula'
+alias cd-rad='cd ~/Work/Which/Repositories/reviews-and-advice'
+alias cd-ll='cd ~/Work/LoveLula/Repositories/lovelula'
+alias cd-nt='cd ~/Work/NewsTrapper/Repositories/newstrapper'
 
 # rbenv
 eval "$(rbenv init -)"
