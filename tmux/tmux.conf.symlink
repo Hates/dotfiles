@@ -48,7 +48,7 @@ bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft=
 bind -n WheelDownPane select-pane -t= \; send-keys -M
 
 # Set the default terminal mode to 256color mode
-set-option -g default-terminal "screen-256color"
+set-option -g default-terminal "xterm-256color"
 
 # this will renumber windows automatically when one gets deleted
 set-option -g renumber-windows on
@@ -63,19 +63,6 @@ setw -g mode-keys vi
 # Enable pbcopy/pbpaste
 bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy" \; display-message "highlighted selection copied to system clipboard"
-
-# Update default binding of `Enter` to also use copy-pipe
-#unbind -t vi-copy Enter
-#bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
-
-# Clock
-set-window-option -g clock-mode-colour colour118
-
-# Spotify
-tm_spotify="#[fg=colour203]#(osascript ~/Work/Clones/dotfiles/applescript/spotify.scpt)"
-
-# Date and time
-tm_date="#[fg=colour241] %R %d %b"
 
 # Styling
 source ~/.dotfiles/tmux/theme.sh
