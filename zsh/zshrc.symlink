@@ -90,6 +90,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
+alias bc='java -jar Work/Misc/Kotlin/bitcoin/out/artifacts/bitcoin_jar/bitcoin.jar'
 
 alias cd-rad='cd ~/Work/Which/Repositories/reviews-and-advice'
 alias cd-ll='cd ~/Work/LoveLula/Repositories/lovelula'
