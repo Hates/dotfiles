@@ -94,6 +94,7 @@ alias bc='java -jar Work/Misc/Kotlin/bitcoin/out/artifacts/bitcoin_jar/bitcoin.j
 
 alias cd-rad='cd ~/Work/Which/Repositories/reviews-and-advice'
 alias cd-ll='cd ~/Work/LoveLula/Repositories/lovelula'
+alias cd-ha='cd ~/Work/HappenAPI/Repositories/happenapi'
 alias cd-nt='cd ~/Work/NewsTrapper/Repositories/newstrapper'
 
 # rbenv
@@ -107,6 +108,11 @@ export FZF_DEFAULT_OPTS='--color fg:188,bg:016,hl:103,fg+:099,bg+:016,hl+:104,in
 # Add iTerm integration
 source ~/.iterm2_shell_integration.zsh
 
+# GoLang Config.
+export GOPATH=~/Work/Misc/GoLang
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# Add nvm config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
