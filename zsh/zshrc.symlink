@@ -80,21 +80,25 @@ source $ZSH/oh-my-zsh.sh
 
 RPOMPT='${PR_GREEN}$($rbenv_prompt_info)%{$reset_color%} ${PR_RED}${ruby_version}%{$reset_color%}'
 
-alias capp='cap production deploy'
-alias caps='cap staging deploy'
-alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
-alias ng-us='ngrok http -subdomain=palmtreecactus 3000'
-alias gpom='git push origin master'
-alias gs='git status'
 alias vi='nvim'
 alias vim='nvim'
+alias cat='bat'
+
+alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
+alias ng-us='ngrok http -subdomain=palmtreecactus 3000'
+
+alias gpom='git push origin master'
+alias gs='git status'
+
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
+alias capp='cap production deploy'
+alias caps='cap staging deploy'
 alias bc='java -jar Work/Misc/Kotlin/bitcoin/out/artifacts/bitcoin_jar/bitcoin.jar'
 
 alias cd-rad='cd ~/Work/Which/Repositories/reviews-and-advice'
 alias cd-ll='cd ~/Work/LoveLula/Repositories/lovelula'
-alias cd-ha='cd ~/Work/HappenAPI/Repositories/happenapi'
+alias cd-ha='cd ~/Work/HappenAPI/Repositories/happen_api'
 alias cd-nt='cd ~/Work/NewsTrapper/Repositories/newstrapper'
 
 # rbenv
@@ -116,3 +120,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add jenv config
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
