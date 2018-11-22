@@ -104,13 +104,20 @@ alias cd-nt='cd ~/Work/NewsTrapper/Repositories/newstrapper'
 # Add iTerm integration
 source ~/.iterm2_shell_integration.zsh
 
-# rbenv
-eval "$(rbenv init -)"
-
 # FZF Integration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS='--color fg:188,bg:016,hl:103,fg+:099,bg+:016,hl+:104,info:183,prompt:110,spinner:107,pointer:167,marker:215'
+
+# Add iTerm integration
+source ~/.iterm2_shell_integration.zsh
+
+# rbenv
+eval "$(rbenv init -)"
+
+# Add jenv config
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # GoLang Config.
 export GOPATH=~/Work/Misc/GoLang
@@ -119,12 +126,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 # Add nvm config
 export NVM_DIR="$HOME/.nvm"
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-#[[ -f /Users/rhart/.nvm/versions/node/v10.1.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/rhart/.nvm/versions/node/v10.1.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-# Add jenv config
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# Add Homebrew MySQL
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
