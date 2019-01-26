@@ -84,9 +84,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias cat='bat'
 
-alias ng='ngrok http -subdomain=palmtreecactus -region=eu 3000'
-alias ng-us='ngrok http -subdomain=palmtreecactus 3000'
-
 alias gpom='git push origin master'
 alias gs='git status'
 
@@ -94,12 +91,12 @@ alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
 alias capp='ssh-add ~/.ssh/id_rsa && cap production deploy'
 alias caps='ssh-add ~/.ssh/id_rsa && cap staging deploy'
-alias bc='java -jar Work/Misc/Kotlin/bitcoin/out/artifacts/bitcoin_jar/bitcoin.jar'
 
-alias cd-rad='cd ~/Work/Which/Repositories/reviews-and-advice'
-alias cd-ll='cd ~/Work/LoveLula/Repositories/lovelula'
-alias cd-ha='cd ~/Work/HappenAPI/Repositories/happen_api'
-alias cd-nt='cd ~/Work/NewsTrapper/Repositories/newstrapper'
+if [ -f ~/.zshalias ]; then
+    source ~/.zshalias
+else
+    print "404: ~/.zshalias not found."
+fi
 
 # Add iTerm integration
 source ~/.iterm2_shell_integration.zsh
