@@ -80,8 +80,6 @@ source $ZSH/oh-my-zsh.sh
 
 RPOMPT='${PR_GREEN}$($rbenv_prompt_info)%{$reset_color%} ${PR_RED}${ruby_version}%{$reset_color%}'
 
-alias vi='nvim'
-alias vim='nvim'
 alias cat='bat'
 
 alias gpom='git push origin master'
