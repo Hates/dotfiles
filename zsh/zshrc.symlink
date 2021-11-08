@@ -107,16 +107,16 @@ export FZF_DEFAULT_OPTS='--color fg:188,bg:016,hl:103,fg+:099,bg+:016,hl+:104,in
 # Add iTerm integration
 source ~/.iterm2_shell_integration.zsh
 
-# rbenv
-eval "$(rbenv init -)"
-
-# Add jenv config
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# Add nvm config
-export NVM_DIR="$HOME/.nvm"
-alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
-
-# Add Homebrew MySQL
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+## rbenv
+#eval "$(rbenv init -)"
+#
+## Add jenv config
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"
+#
+## Add nvm config
+#export NVM_DIR="$HOME/.nvm"
+#alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
+#
+## Add Homebrew MySQL
+#export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
