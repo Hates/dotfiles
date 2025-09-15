@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
-alias fafftime='cd "~/Work/Projects/Faff\ Time/Repositories/fafftimev3"'
+alias fafftime='cd ~/Work/Projects/Faff\ Time/Repositories/fafftimev3'
 
 if [ -f ~/.zshalias ]; then
     source ~/.zshalias
