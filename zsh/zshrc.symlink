@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias rc='bundle exec rails c'
 alias rs='bundle exec rails s'
+alias fafftime='cd "~/Work/Projects/Faff\ Time/Repositories/fafftimev3"'
 
 if [ -f ~/.zshalias ]; then
     source ~/.zshalias
@@ -118,3 +119,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export FZF_DEFAULT_OPTS='--color fg:188,bg:016,hl:103,fg+:099,bg+:016,hl+:104,info:183,prompt:110,spinner:107,pointer:167,marker:215'
 
+# Java exports
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
